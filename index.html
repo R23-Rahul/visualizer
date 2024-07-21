@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div  class="header" >
+        <h1 class="heading">Sorting Visualizer</h1>
+    </div>
+    <div class="start-button">
+        <button id="new-array" class="">START</button>
+      </div>
+    <div class="upperNavDiv">
+        <nav class="navDiv">
+<!-- Sorting algo list buttons -->
+          <div class="sortButtonDiv">
+            <button id="selection-sort">Selection Sort</button>
+            <button id="insertion-sort">Insertion Sort</button>
+            <button id="bubble-sort" >Bubble Sort</button>
+            <button id="merge-sort" >Merge Sort</button>
+            <button id="quick-sort" >Quick Sort</button>
+          </div>
+        </nav>
+      </div>
+      <div id="bars-container" class="barContainer"></div>
+
+      <!-- Restart Button -->
+    <div id="footer" class="footer">
+        <button id="restart" class="">Restart</button> 
+    </div>
+    <!-- Speeding Button -->
+<div id="speeder" class="speeder">
+    <button id="slow" class="">Slower</button>
+    <button id="medium" class="">Medium</button>
+    <button id="fast" class=" ">Faster</button>
+</div>
+    
+<script src="./index.js"></script>
+</body>
+</html>

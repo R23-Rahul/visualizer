@@ -1,0 +1,176 @@
+/* Container and layout styling */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding:0;
+    margin: 0;
+}
+:root {
+    --font-mullish: "Mulish", "sans-serif";
+    --deep-blue: #02042a;
+    --light-blue: #2b84ea;
+    --light-blue-300: #4b94ed;
+    --light-blue-500: #0b72e7;
+    --green-light: #61cea6;
+    --gray-text: #818597;
+    --light-gray: #e2e2e2;
+    --gray-blue: #344a6c;
+    --deep-blue-head: #162f56;
+    --gray-2: #525a76;
+  }
+
+
+
+body {
+  font-family: var(--font-mullish);
+}
+
+.header{
+    display: flex;
+    background: var(--light-blue);
+    justify-content: center;
+     color:white;
+     width:auto;
+     padding:0.5rem;
+  
+}
+.heading{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.start-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+
+.upperNavDiv{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+Button{
+    cursor: pointer;
+    border-radius: 0.25rem;
+    
+    padding: 0.40rem 1rem;
+    margin: 0.25rem;
+    font-size: 1rem;
+    background-color: var(--gray-2);
+    color:white;
+    
+}
+ Button:hover{
+    background-color: var(--deep-blue-head);
+    transition: background-color 0.3s ease-in-out;
+ }
+
+
+ .barContainer{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* height: 40px; */
+    position: relative;
+    margin-top: 2rem;
+ }
+
+ .footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+ }
+ .speeder{
+    display: flex;
+    justify-content: center;
+    position: relative;
+ }
+ .default-color {
+    background-color: #3498db; /* Original bar color, blue for example */
+}
+
+.compare-color {
+    background-color: #e74c3c; /* Color during comparison, red for example */
+}
+
+.bar {
+    width: 10px; /* Adjust width as needed */
+    margin: 2px;
+}
+.footer{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.speeder{
+    gap: 1rem;
+}
+.button-active {
+    background-color: var(--deep-blue-head); /* Active button color */
+}
+
+.speed-active {
+    background-color: var(--deep-blue-head); /* Active speed button color */
+}
+@media (max-width: 1200px) {
+    Button {
+        padding: 0.35rem 0.9rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Media query for screens 992px or smaller */
+@media (max-width: 992px) {
+    Button {
+        padding: 0.3rem 0.85rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Media query for screens 768px or smaller */
+@media (max-width: 768px) {
+    Button {
+        padding: 0.25rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Media query for screens 670px or smaller */
+@media (max-width: 670px) {
+    Button {
+        padding: 0.20rem 0.75rem;
+        font-size: 0.8rem;
+        margin: 0.2rem;
+    }
+}
+
+/* Media query for screens 576px or smaller */
+@media (max-width: 576px) {
+    Button {
+        padding: 0.15rem 0.7rem;
+        font-size: 0.75rem;
+        margin: 0.15rem;
+    }
+}
+
+/* Media query for screens 480px or smaller */
+@media (max-width: 480px) {
+    Button {
+        padding: 0.10rem 0.4rem;
+        font-size: 0.7rem;
+        margin: 0.10rem;
+    }
+}
+
+/* Media query for screens 360px or smaller */
+@media (max-width: 360px) {
+    Button {
+        padding: 0.05rem 0.1rem;
+        font-size: 0.65rem;
+        margin: 0.0.07rem;
+    }
+}
